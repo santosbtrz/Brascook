@@ -1,0 +1,166 @@
+body {
+  margin-top: 90px
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.show {
+  color: #bcffbb;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #bcffbb;
+}
+
+
+.navbar {
+  background-color: #0C0F0E;
+  height: 80px;
+}
+
+.navbar-brand,
+.offcanvas-title {
+  font-weight: 500;
+  color: #e4bc5b;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.offcanvas {
+  background-color: #0C0F0E;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4bc5b;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #e4bc5b;
+  text-decoration: none;
+  transition: 0.3s background-color, 0.3s border-color, 0.2s transform;
+}
+
+.icon-login {
+  width: 30px;
+  height: 30px;
+}
+
+.login-button:hover {
+  background-color: #e4bc5b;
+  border-color: #a77500;
+}
+
+.login-button:active {
+  transform: scale(1.1);
+  /* Aumenta o tamanho do botão ao clicar */
+  transition: transform 0.1s;
+  /* Define uma transição rápida ao clicar */
+}
+
+.btn {
+  color: #e4bc5b;
+}
+
+.btn.btn-outline-success:active {
+  background-color: #fcd373;
+  border-color: #fcd373;
+}
+
+.btn-outline-success {
+  border-color: #fcd373;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  /* Cor do texto ao passar o mouse */
+  background-color: #e4bc5b;
+  /* Cor de fundo ao passar o mouse */
+  border-color: #e4bc5b;
+  /* Cor da borda ao passar o mouse */
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #dfdfdf;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #bcffbb;
+}
+
+@media (min-width: 991px) {
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #e4bc5b;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover:before,
+  .nav-link:focus:before,
+  .nav-link.active:before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+#l-1 {
+  stroke: #bcffbb;
+}
+
+#l-2 {
+  stroke: #e4bc5b;
+}
+
+#Chapeu {
+  fill: #e4bc5b;
+}
+
+.logo {
+  padding-bottom: 10px;
+}
+
+
+body {
+  background-color: #15252e;
+}
+
+.manutencao-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.manutencao-txt h1 {
+  color: #e4bc5b;
+  padding-top: 1rem;
+  border: 0;
+}
+
+.manutencao-txt p {
+  color: #c7c7c7;
+  border: 0;
+}
